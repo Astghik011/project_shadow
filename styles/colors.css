@@ -1,0 +1,54 @@
+body,
+#number_of_orders,
+.order_range{
+    background-color:#F2F2F3;
+}
+
+ul li, 
+aside,
+.btn,
+footer{
+    background-color:white;
+}
+
+ul li a:active,
+.btn:hover,
+#submit_order:hover{
+    background-color: #FFAB08;
+}
+
+ul li a, 
+h2,
+h3,
+.btn,
+.add,
+.subtract,
+.number,
+.order_number > a{
+    color: black;
+}
+
+.add_order,
+.number{
+    background-color: #F2F2F3;
+}
+
+.add:hover,
+.subtract:hover{
+    background-color: #B1B1B1;
+}
+
+#submit_order{
+    background-color:#FF7020;
+}
+
+
+#submit_order{
+    color:white;
+}
+
+.weight{
+    color: #B1B1B1;
+}
+
+

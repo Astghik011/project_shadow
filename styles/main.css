@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:100%;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+nav{
+    position:absolute;
+    top:506px;
+    left:75px;
+}
+
+.menu,
+.btn,
+nav ul li{
+    display:flex;
+}
+
+.menu{
+    justify-content: space-between;
+}
+
+.btn{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    gap: 5px;
+    border-radius: 50px;
+    background: url(icons/free-icon-cheeseburger-2362255.png);
+}
+
+nav ul li{
+    position: relative;
+}
+
+
+
+
+
+
+
