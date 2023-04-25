@@ -12,11 +12,12 @@ ul li a{
     text-align: center;
 }
 
-h2{
+.order > h2{
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 24px;
+    
 }
 
 .order_name{

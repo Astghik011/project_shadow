@@ -30,17 +30,18 @@
     height: 326px;
     color: #FFFFFF;
 }
-.content-container > p {
+#head-paragraph {
     margin-left: 347px;
-    margin-top: 152px;
+    margin-top: 218px;
+    
    
 }
 .burger-img{
     position: absolute;
-    margin-top: 27px;
+    margin-top: 26px;
     margin-left: 36px;
 }
-.hd-container-text{
+#hd-container-text{
     margin-top: 46px;
     margin-left: 347px;
     font-size: 50px;
@@ -50,7 +51,7 @@
     
     
 }
-.hd-container-text > span {
+#hd-container-text > span {
     color: #FF5C00;
    
 }
