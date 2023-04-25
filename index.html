@@ -12,23 +12,56 @@
     <title>Your Meal</title>
     <!--HEADER STYLES-->
     <link rel="stylesheet" href="./styles/headerStyles.css">
+    <!-- DELIVERY STYLES -->
+    <link rel="stylesheet" href="./styles/deliverystyles.css">
     <!-- CSS FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body><p></p>
-
+<!-- header -->
     <header class="header-main">
         <div class="yellow-elipse"></div>
     <a href="./#" style="z-index: 1; width: 150px; height: 29px;  margin-top: 30px;"><img src="./images/headerLogosImgs/logo.svg" alt="yourmeal" ></a>
     <div class="content-container">
         <img class="burger-img" src="./images/headerLogosImgs/burger.svg" alt="burger">
-        <h2 class="hd-container-text">Только самые <span>сочные бургеры!</span></h2>
-        <p>Бесплатная доставка от <span style="font-weight:600 ;">599₽</span></p>
+        <h2 id="hd-container-text">Только самые <span>сочные бургеры!</span></h2>
+        <p id="head-paragraph">Бесплатная доставка от <span style="font-weight:600 ;">599₽</span></p>
     </div>
     
     </header>
+<!-- delivery window -->
+    <div id="delivery-main">
+        <div class="delivery-container">
+            <div class="delivery-img">
+                <img src="./images/deliveryImgs/bublik.svg" alt="bublik">
+            </div>
+            <div class="delivery-form">
+               <p class="form-head">Доставка</p> 
+               <button onclick="closeDelivery()" class="delivery-close"><img src="./images/deliveryImgs/close.svg" alt="x"></button>
+               <form action="#" class="main-form">
+                    <input type="text"  placeholder="Ваше имя">
+                    <input type="number" placeholder="Телефон">
+                    <br>
+                    <div class="radio">
+                        <input type="radio" id="pickup" name="type-delivery" >
+                        <label for="pickup">Самовывоз </label>
+                        <br>
+                        <input type="radio" id="delivery"  name="type-delivery">
+                        <label for="delivery">Доставка</label>
+                    </div>
+                    <br>
+                    <input type="text" placeholder="Улица, дом, квартира">
+                    <div class="row-input">
+                        <input type="number" placeholder="Этаж">
+                        <input type="number" placeholder="Домофон" >
+                    </div>
+                    <input type="submit" id="form-submit" value="Оформить">
+               </form>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
       
         <nav class="container">
@@ -71,6 +104,8 @@
                 </li>
             </ul>
         </nav>
+        <!-- delivery -->
+        
     <div class="container main_content">
         <main>
 
@@ -118,7 +153,7 @@
                 <span class="sum_total">Итого</span>
                 <span id="total_price">1235₽</span>
             </div>
-                <button type="button" id="submit_order">Оформить заказ</button>
+                <button onclick="showDeliveryWindow()" type="button" id="submit_order">Оформить заказ</button>
             <div class="free_delivery">
                 <img id="delivery" src="icons/free-icon-delivery-2362252.png"></span>
                 <span>Бесплатная доставка</span>
@@ -155,5 +190,7 @@
             </div>
         </footer>
     </div>
+<!-- scripts -->
+<script src="./scripts/deliveryScripts.js"></script>
 </body>
 </html>
