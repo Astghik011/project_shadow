@@ -9,7 +9,7 @@ footer{
 .foot{
     display:flex;
     margin: 61px inherit;
-    /* position: relative; */
+    position: relative;
 }
 
 .large_logo{
