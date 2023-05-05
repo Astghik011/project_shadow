@@ -13,7 +13,8 @@ footer{
 
 ul li a:active,
 .btn:hover,
-#submit_order:hover{
+#submit_order:hover,
+.btn_main:hover{
     background-color: #FFAB08;
 }
 
@@ -38,12 +39,14 @@ h3, */
     background-color: #B1B1B1;
 }
 
-#submit_order{
+#submit_order,
+.active{
     background-color:#FF7020;
 }
 
 
-#submit_order{
+#submit_order,
+.btn_main:hover{
     color:white;
 }
 

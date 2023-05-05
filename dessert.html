@@ -1,59 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Meal</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/colors.css">
     <link rel="stylesheet" href="styles/typography.css">
     <link rel="stylesheet" href="styles/aside.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <title>Your Meal</title>
+    <!--HEADER STYLES-->
+    <link rel="stylesheet" href="./styles/headerStyles.css">
+    <!-- DELIVERY STYLES -->
+    <link rel="stylesheet" href="./styles/deliverystyles.css">
+    <!-- CSS FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- header -->
+    <header class="header-main">
+        <div class="yellow-elipse"></div>
+    <a href="./#" style="z-index: 1; width: 150px; height: 29px;  margin-top: 30px;"><img src="./images/headerLogosImgs/logo.svg" alt="yourmeal" ></a>
+    <div class="content-container">
+        <img class="burger-img" src="./images/headerLogosImgs/burger.svg" alt="burger">
+        <h2 id="hd-container-text">Только самые <span>сочные бургеры!</span></h2>
+        <p id="head-paragraph">Бесплатная доставка от <span style="font-weight:600 ;">599₽</span></p>
+    </div>
+    
+    </header>
+<!-- delivery window -->
+    <div id="delivery-main">
+        <div class="delivery-container">
+            <div class="delivery-img">
+                <img src="./images/deliveryImgs/bublik.svg" alt="bublik">
+            </div>
+            <div class="delivery-form">
+               <p class="form-head">Доставка</p> 
+               <button onclick="closeDelivery()" class="delivery-close"><img src="./images/deliveryImgs/close.svg" alt="x"></button>
+               <form action="#" class="main-form">
+                    <input type="text"  placeholder="Ваше имя">
+                    <input type="number" placeholder="Телефон">
+                    <br>
+                    <div class="radio">
+                        <input type="radio" id="pickup" name="type-delivery" >
+                        <label for="pickup">Самовывоз </label>
+                        <br>
+                        <input type="radio" id="delivery"  name="type-delivery">
+                        <label for="delivery">Доставка</label>
+                    </div>
+                    <br>
+                    <input type="text" placeholder="Улица, дом, квартира">
+                    <div class="row-input">
+                        <input type="number" placeholder="Этаж">
+                        <input type="number" placeholder="Домофон" >
+                    </div>
+                    <input type="submit" id="form-submit" value="Оформить">
+               </form>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
-        <header>
         <nav class="container">
             <ul class="menu">
-                <li class="btn frame1 active">
+                <li class="btn frame1">
                     <img class="icon" src="icons/free-icon-cheeseburger-2362255.png">                  
-                    <a href="">Бургеры</a>
+                    <a href="index.html">Бургеры</a>
                 </li>
                 <li class="btn frame2">
                     <img class="icon" src="icons/free-icon-burrito-2362225.png">
-                    <a href="">Закуски</a>
+                    <a href="snacks.html">Закуски</a>
                 </li>
                 <li class="btn frame3">
                     <img class="icon" src="icons/free-icon-hotdog-sandwich-2362313.png">
-                    <a href="">Хот-доги</a>
+                    <a href="hot-dog.html">Хот-доги</a>
                 </li>
                 <li class="btn frame4">
                     <img class="icon" src="icons/free-icon-fast-food-2362274.png">
-                    <a href="">Комбо</a>
+                    <a href="kombo.html">Комбо</a>
                 </li>
                 <li class="btn frame5">
                     <img class="icon" src="icons/free-icon-burrito-2362225.png">
-                    <a href="">Шаурма</a>
+                    <a href="shawarma.html">Шаурма</a>
                 </li>
                 <li class="btn frame6">
                     <img class="icon" src="icons/free-icon-pizza-2362372.png">
-                    <a href="">Пицца</a>
+                    <a href="pizza.html">Пицца</a>
                 </li>
                 <li class="btn frame7">
                     <img class="icon" src="icons/free-icon-noodles-2362350.png">
-                    <a href="">Вок</a>
+                    <a href="wok.html">Вок</a>
                 </li>
-                <li class="btn frame8">
+                <li class="btn frame8 active">
                     <img class="icon" src="icons/free-icon-doughnut-2362260.png">
-                    <a href="">Десерты</a>
+                    <a href="dessert.html">Десерты</a>
                 </li>
                 <li class="btn frame9">
                     <img class="icon" src="icons/free-icon-ketchup-2362341.png">
-                    <a href="">Соусы</a>
+                    <a href="sauce.html">Соусы</a>
                 </li>
             </ul>
         </nav>
-        </header>
+        <!-- delivery -->
     <div class="container main_content">
     <main>
         <div class="products_main">
@@ -172,8 +222,8 @@
                 </div>
                 <div class="order_number">
                     <p class="delivery_number">Мы в соцсетях</p>
-                    <img src="icons/vk.png" id="vk" class="media_icon">
-                    <img src="icons/telegram.png" id="telegram" class="media_icon">
+                    <a href="https://vk.com/"><img src="icons/vk.png" id="vk" class="media_icon"></a>
+                    <a href="https://web.telegram.org/k/"><img src="icons/telegram.png" id="telegram" class="media_icon"></a>
                 </div>
             </div>
         </div>
