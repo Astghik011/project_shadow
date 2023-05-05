@@ -33,7 +33,7 @@ aside{
     border-radius: 6px;
 }
 
-h2{
+.order > h2{
     width: 98px;
     height: 24px;
     left: 16px;

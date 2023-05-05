@@ -43,7 +43,68 @@ nav ul li{
     position: relative;
 }
 
+main {
+    position: absolute;
+    left: 405px;
+    top: 668px;
+    width: 1000px;
+    max-height: 865px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .products_main{
+    width: 280px;
+    height: 405px;
+    top: 12px;
+    margin: 5px;
+    background: #ffffff;
+    border-radius: 12px;
+  }
 
+  .productsImg {
+    width: 256px;
+    height: 220px;
+    margin: 10px;
+    border-radius: 12px;
+  }
+  .price_main{
+    width: 58px;
+    height: 24px;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+  }
+  .productsName {
+    height: 21px;
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #000000;
+  }
+  .productsMass {
+    position: absolute;
+    width: 36px;
+    height: 21px;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #b1b1b1;
+  }
+  .btn_main{
+    align-items: center;
+    width: 260px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 25px;
+    background: #f2f2f3;
+    border-color: #f2f2f3;
+    border-radius: 12px;
+  }
+  
 
 
 
