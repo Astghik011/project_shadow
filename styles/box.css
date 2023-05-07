@@ -1,0 +1,80 @@
+.box {
+    width: 684px;
+    height: 432px;
+    margin: auto;
+    margin-top: 8%;
+  display: flex;
+  
+  flex-direction: column; 
+  
+    background: #cec0c0;
+    border-radius: 24px;
+  }
+  .h2_main {
+    width: 272px;
+    height: 48px;
+    margin-left: 24px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 40px;
+    color: #000000;
+  } 
+   .box_main{
+    height: 280px;
+    width: 684px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 20.8px;
+  }
+  .sub_main{
+    width: 684px;
+    display: flex;
+    flex-direction: row;
+  }
+   .img_box {
+    width: 276px;
+    height: 220px;
+    margin-left: 24px;
+    margin-right: 20px;
+    border-radius: 16px;
+  }
+  .p_main{
+    width: 380px;
+    size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+  }
+  .ingridients_main{
+    width: 344px;
+    height: 14px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 7px;
+    
+    color: #000000;
+   } 
+ .box_footer{
+    display: inline-block;
+    display: flex;
+    /* flex-direction: row; */
+  
+  }
+      
+  .add_order{
+    width: 84px;
+    height: 40px;
+    border-radius: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.number{
+  width: 20px;
+}
+#submit_order{
+  width: 276px;
+  height: 40px;
+  top: 356px;
+  left: 24px;
+  border-radius: 12px;
+  padding: 11px, 32px, 11px, 22px;
+}
