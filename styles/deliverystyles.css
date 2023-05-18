@@ -1,7 +1,7 @@
 #delivery-main{
    
     width: 100%;
-    height: calc(100% + 1000px);
+    height: calc(100% + 660px);
     margin-top: -466px;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.8);
@@ -107,3 +107,8 @@
     background-color:#FF7020;
     color: #FFFFFF;
 }
+
+/* .delivery_inputs{
+    display: none;
+    
+} */
