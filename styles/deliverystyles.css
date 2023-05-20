@@ -1,7 +1,7 @@
 #delivery-main{
    
     width: 100%;
-    height: calc(100% + 1000px);
+    height: calc(100% + 660px);
     margin-top: -466px;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.8);
@@ -74,7 +74,8 @@
     
 }
 
-.main-form > input {
+.main-form > input ,
+#for_delivery > input{
     margin-bottom: 8px;
     padding: 12px;
     width: 294px;
@@ -84,10 +85,10 @@
     border-radius: 12px;
 
 }
-.main-form > .row-input{
+.main-form > #for_delivery > .row-input{
     display: flex;
 }
-.main-form > .row-input > input {
+.main-form > #for_delivery >.row-input > input {
     width: 143px;
     height: 40px;
     background: #FFFFFF;
@@ -107,3 +108,8 @@
     background-color:#FF7020;
     color: #FFFFFF;
 }
+
+
+/* .delivery_inputs{
+    display: none;
+} */

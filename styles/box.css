@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nunito+Sans:wght@300;400;700&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans";
+}
+#details-main{
+
+  width: 100%;
+  height: calc(100% + 660px);
+  margin-top: -466px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  /* display: flex; */
+  justify-content: center;
+  display: none;
+  
+    
+}
+.details-close{
+  position: absolute;
+  border: none;
+  margin-left: 604px;
+  background-color: #FFFFFF;
+}
+.details-container{
+  width: 684px;
+  height: 432px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+  border-radius:24px;
+  padding: 24px 24px 36px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+    
+}
+.box_main{
+  display: flex;
+  justify-content: space-between;
+  width: 636px;
+  height: 276px;
+  margin-top: 72px;
+
+    
+}
+.img_box{
+  width: 276px;
+  height: 220px;
+  border-radius: 16px;
+}
+.box_footer{
+    display: flex;
+}
+.box_main_text{
+  width: 344px;
+  height: 84px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.h2_main{
+  width: 280px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+}
+.ingridients_main{
+  list-style-type: none;
+  font-size: 12px;
+}
+.ingridient{
+  margin-bottom: 2px;
+}
+.details_head{
+  font-weight: 600;
+}
+
+.first_ingridient {
+  margin-top: 4px;  
+}
+
+.weight_info{
+  margin-top: 4px;
+  color: #B1B1B1;
+}
+#add_product{
+  width: 276px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #F86310;
+  border: none;
+
+}
+#add_product:hover{
+  background-color:#FFAB08;
+  color: #FFFFFF;
+}
+.product_count{
+  display: flex;
+  width: 84px;
+  height: 40px;
+  background-color: #e7e0e0;
+  border-radius: 12px;
+  justify-content: space-between;
+  padding: 12px 9px;
+  margin-left: 16px;
+  font-size: 16px;
+}
+.product_count > button {
+  border: none;
+  background-color: #e7e0e0;
+}
+.product_price{
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 202px;
+}
+.box_footer{
+  align-items: center;
+}

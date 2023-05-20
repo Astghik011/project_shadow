@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./styles/headerStyles.css">
     <!-- DELIVERY STYLES -->
     <link rel="stylesheet" href="./styles/deliverystyles.css">
+    <!-- DETAILS STYLES -->
+    <link rel="stylesheet" href="./styles/box.css">
     <!-- CSS FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,23 +47,58 @@
                     <input type="number" placeholder="Телефон">
                     <br>
                     <div class="radio">
-                        <input type="radio" id="pickup" name="type-delivery" >
+                        <input onclick="closeElements()" type="radio" id="pickup" name="type-delivery" value="samovizov">
                         <label for="pickup">Самовывоз </label>
                         <br>
-                        <input type="radio" id="delivery"  name="type-delivery">
+                        <input onclick="showElements()" type="radio" id="delivery"  name="type-delivery" value="dostavka">
                         <label for="delivery">Доставка</label>
                     </div>
                     <br>
-                    <input type="text" placeholder="Улица, дом, квартира">
-                    <div class="row-input">
-                        <input type="number" placeholder="Этаж">
-                        <input type="number" placeholder="Домофон" >
-                    </div>
-                    <input type="submit" id="form-submit" value="Оформить">
+                        <div id="for_delivery">
+                            <input class="delivery_inputs"   type="text" placeholder="Улица, дом, квартира">
+                            <div class="row-input" >
+                                <input class="delivery_inputs"  type="number" placeholder="Этаж">
+                                <input class="delivery_inputs"  type="number" placeholder="Домофон" >
+                            </div>
+                        </div>
+                    
+                        <input type="submit"  id="form-submit" value="Оформить">
                </form>
             </div>
         </div>
     </div>
+<!-- PRODUCTS DETAILS INFO -->
+<div id="details-main">
+    <div class="details-container">
+        <h2 class="h2_main">Мясная бомба</h2>
+        <button onclick="closeDetails()" class="details-close"><img src="./images/deliveryImgs/close.svg" alt="x"></button>
+
+        <figure class="box_main">
+            <img class="img_box" src="images/burger_images/burger_1.jpg" alt="Burger">
+            <figcaption>
+                <p class="box_main_text">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                <ul class="ingridients_main">
+                    <lh class="details_head">Состав:</lh>
+                    <li class="ingridient first_ingridient">Пшеничная булочка</li>
+                    <li class="ingridient">Котлета из говядины</li>
+                    <li class="ingridient">Красный лук</li>
+                    <li class="ingridient">Листья салата</li>
+                    <li class="ingridient last_ingridient">Листья салата</li>
+                    <li class="ingridient weight_info">520г, ккал 430</li>
+                </ul>
+            </figcaption>
+        </figure>
+        <div class="box_footer">
+            <input type="submit" id="add_product" value="Добавить">
+            <div class="product_count"><button class="subtract">-</button><p class="product_count_info">1</p> <button class="add">+</button></div>
+            <p class="product_price">689₽</p>
+        </div> 
+        
+        
+       
+    </div>
+</div>
+<!-- MAIN -->
     <div class="wrapper">
         <nav class="container">
             <ul class="menu">
@@ -108,42 +145,42 @@
     <div class="container main_content">
         <main>
             <div class="products_main">
-                <img class="productsImg" src="images/burger_images/burger_1.jpg" alt="Burger">
+                <button onclick="showDetails()"><img class="productsImg" src="images/burger_images/burger_1.jpg" alt="Burger"></button>
                 <span class="price_main">640₽</span>
                 <p class="productsName">Филадельфия</p>
                 <span class="productsMass">520г</span>
                 <button class="btn_main">Добавить</button>
             </div>
             <div class="products_main">
-                <img class="productsImg" src="images/burger_images/burger_2.jpg" alt="Burger">
+                <button onclick="showDetails()"><img class="productsImg" src="images/burger_images/burger_2.jpg" alt="Burger"></button>
                 <span class="price_main">687₽</span>
                 <p class="productsName">Королевский</p>
                 <span class="productsMass">500г</span>
                 <button class="btn_main">Добавить</button>
             </div>
             <div class="products_main">
-                <img class="productsImg" src="images/burger_images/burger_3.jpg" alt="Burger">
+                <button onclick="showDetails()"><img class="productsImg" src="images/burger_images/burger_3.jpg" alt="Burger"></button>
                 <span class="price_main">590₽</span>
                 <p class="productsName">Гавайский лосось</p>
                 <span class="productsMass">450г</span>
                 <button class="btn_main">Добавить</button>
             </div>
             <div class="products_main">
-                <img class="productsImg" src="images/burger_images/burger_4.jpg" alt="Burger">
+                <button onclick="showDetails()"><img class="productsImg" src="images/burger_images/burger_4.jpg" alt="Burger"></button>
                 <span class="price_main">570₽</span>
                 <p class="productsName">Кубанский</p>
                 <span class="productsMass">480г</span>
                 <button class="btn_main">Добавить</button>
             </div>
             <div class="products_main">
-                <img class="productsImg" src="images/burger_images/burger_5.jpg" alt="Burger">
+                <button onclick="showDetails()"><img class="productsImg" src="images/burger_images/burger_5.jpg" alt="Burger"></button>
                 <span class="price_main">725₽</span>
                 <p class="productsName">Белый дракон</p>
                 <span class="productsMass">510г</span>
                 <button class="btn_main">Добавить</button>
             </div>
             <div class="products_main">
-                <img class="productsImg" src="images/burger_images/burger_6.jpg" alt="Burger">
+                <button onclick="showDetails()"></button><img class="productsImg" src="images/burger_images/burger_6.jpg" alt="Burger"></button>
                 <span class="price_main">620₽</span>
                 <p class="productsName">Мексиканский</p>
                 <span class="productsMass">520г</span>
@@ -230,7 +267,9 @@
             </div>
         </footer>
     </div>
-<!-- scripts -->
+<!-- SCRIPTS -->
+
 <script src="./scripts/deliveryScripts.js"></script>
+<script src="./scripts/detailsScripts.js"></script>
 </body>
 </html>
