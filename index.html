@@ -47,21 +47,22 @@
                     <input type="number" placeholder="Телефон">
                     <br>
                     <div class="radio">
-                        <input type="radio" id="pickup" name="type-delivery" value="samovizov">
+                        <input onclick="closeElements()" type="radio" id="pickup" name="type-delivery" value="samovizov">
                         <label for="pickup">Самовывоз </label>
                         <br>
-                        <input type="radio" id="delivery"  name="type-delivery" value="dostavka">
+                        <input onclick="showElements()" type="radio" id="delivery"  name="type-delivery" value="dostavka">
                         <label for="delivery">Доставка</label>
                     </div>
                     <br>
-                    
-                        <input class="delivery_inputs" type="text" placeholder="Улица, дом, квартира">
-                        <div class="row-input">
-                            <input class="delivery_inputs" type="number" placeholder="Этаж">
-                            <input class="delivery_inputs" type="number" placeholder="Домофон" >
+                        <div id="for_delivery">
+                            <input class="delivery_inputs"   type="text" placeholder="Улица, дом, квартира">
+                            <div class="row-input" >
+                                <input class="delivery_inputs"  type="number" placeholder="Этаж">
+                                <input class="delivery_inputs"  type="number" placeholder="Домофон" >
+                            </div>
                         </div>
                     
-                    <input type="submit" id="form-submit" value="Оформить">
+                        <input type="submit"  id="form-submit" value="Оформить">
                </form>
             </div>
         </div>
