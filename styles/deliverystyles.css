@@ -74,7 +74,8 @@
     
 }
 
-.main-form > input {
+.main-form > input ,
+#for_delivery > input{
     margin-bottom: 8px;
     padding: 12px;
     width: 294px;
@@ -84,10 +85,10 @@
     border-radius: 12px;
 
 }
-.main-form > .row-input{
+.main-form > #for_delivery > .row-input{
     display: flex;
 }
-.main-form > .row-input > input {
+.main-form > #for_delivery >.row-input > input {
     width: 143px;
     height: 40px;
     background: #FFFFFF;
@@ -108,7 +109,7 @@
     color: #FFFFFF;
 }
 
+
 /* .delivery_inputs{
     display: none;
-    
 } */
